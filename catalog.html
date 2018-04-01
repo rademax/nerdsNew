@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Заголовок</title>
+  <meta content="" name="description" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/symbols-nerds.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body class="inner_page">
+  <header class="main_header">
+    <div class="container clearfix">
+
+      <div class="main_head clearfix">
+        <div class="header_logo">
+          <a href="index.html"><img src="img/main_logo.png" alt="Логотип"></a>
+        </div>
+        <nav class="main_navigation">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li class="active"><a href="/catalog.html">Магазин</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="main_basket">
+          <a href="#"><i class="icon-basket"></i>Корзина</a>
+        </div>
+      </div>
+
+      <div class="main_head_descr">
+        <h1>Добро пожаловать в магазин <br> готовых макетов</h1>
+      </div>
+
+    </div>
+    
+  </header>
+
+  <main class="container clearfix">
+
+    <div class="inner_columns clearfix">
+      <div class="inner_column_left">
+        <form class="setting_form" сaction="#" method="get">
+          <div class="cost_setting">
+            <p>Стоимость</p>
+            <div class="cost_range">
+              <input type="range" min="0" max="15000" value="10000">
+            </div>
+            <label>
+              От 
+              <input type="text" value="0">
+            </label>
+            <label>
+              До 
+              <input type="text" value="15000">
+            </label>
+          </div>
+          <div class="grid_setting">
+            <p>Сетка</p>
+            <label class="grid_radio">
+              <input type="radio" name="grid" index="adaptive" checked>
+              <span class="radio_indicator"></span>
+              Адаптивная
+            </label>
+            <label class="grid_radio">
+              <input type="radio" name="grid" index="fixed">
+              <span class="radio_indicator"></span>
+              Фиксированная
+            </label>
+            <label class="grid_radio ">
+              <input type="radio" name="grid" index="rubber">
+              <span class="radio_indicator"></span>
+              Резиновая
+            </label>
+          </div>
+          <div class="features_setting">
+            <p>Особенности</p>
+            <label class="featured_checkbox">
+              <input type="checkbox" name="slider" checked>
+              <span class="checkbox_indicator"></span>
+              Слайдер
+            </label>
+            <label class="featured_checkbox">
+              <input type="checkbox" name="blockadvantage">
+              <span class="checkbox_indicator"></span>
+              Блок преимуществ
+            </label>
+            <label class="featured_checkbox">
+              <input type="checkbox" name="news" checked>
+              <span class="checkbox_indicator"></span>
+              Новости
+            </label>
+            <label class="featured_checkbox">
+              <input type="checkbox" name="gallery">
+              <span class="checkbox_indicator"></span>
+              Галерея
+            </label>
+            <label class="featured_checkbox">
+              <input type="checkbox" name="basket">
+              <span class="checkbox_indicator"></span>
+              Корзина
+            </label>
+          </div>
+
+          <button class="btn btn_grey" type="submit">Показать</button>
+        </form>
+      </div>
+      <div class="inner_column_right">
+        <div class="items_sorting clearfix">
+          <div class="item_sorting_type">
+            <b>Сортировать:</b>
+              <li class="active"><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По функционалу</a></li>
+            </ul>
+          </div>
+          <div class="item_sorting_updown">
+            <a href="#" class="icon-down-dir active"></a>
+            <a href="#" class="icon-up-dir"></a>
+          </div>
+        </div>
+        <div class="inner_items">
+          <div class="inner_item">
+            <img src="img/item_image.png" alt="Alt">
+          </div>
+          <div class="inner_item hover">
+            <img src="img/item_image.png" alt="Alt">
+            <div class="item_hover">
+              <h3 class="item_name">Sunset</h3>
+              <p class="item_description">Интернет-магазин с личным кабинетом</p>
+              <a href="#" class="btn item_price">10000 р.</a>
+            </div>
+          </div>
+          <div class="inner_item">
+            <img src="img/item_image.png" alt="Alt">
+          </div>
+          <div class="inner_item">
+            <img src="img/item_image.png" alt="Alt">
+          </div>
+          <div class="inner_item">
+            <img src="img/item_image.png" alt="Alt">
+          </div>
+          <div class="inner_item">
+            <img src="img/item_image.png" alt="Alt">
+          </div>
+          <div class="inner_item">
+            <img src="img/item_image.png" alt="Alt">
+          </div>
+          <div class="inner_item">
+            <img src="img/item_image.png" alt="Alt">
+          </div>
+        </div>
+        <div class="paginator">
+          <span class="btn btn_grey current">1</span>
+          <a href="#" class="btn btn_grey">2</a>
+          <a href="#" class="btn btn_grey">3</a>
+          <a href="#" class="btn btn_grey next">Следующая</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="index_map">
+      <div class="main_map">
+        <img src="img/map.jpg" alt="">
+      </div>
+      <div class="index_map_contacts">
+        <h1>NЁRDS DESIGN STUDIO</h1>
+        <p>
+          191186, Санкт-Петербург, <br>
+          ул. Б. Конюшенная, д. 19/8 <br><br>
+          тел. +7 (812) 275-75-75
+        </p>
+        <a href="#" class="btn">Напишите нам</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main_footer">
+    <div class="container clearfix">
+      <div class="footer_social">
+        <a href="#" class="social_btn"><i class="icon-vk"></i></a>
+        <a href="#" class="social_btn"><i class="icon-facebook"></i></a>
+        <a href="#" class="social_btn"><i class="icon-instagramm"></i></a>
+      </div>
+      <div class="footer_deal">
+        <p class="big_p">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
