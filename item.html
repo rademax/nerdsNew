@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <title>Заголовок</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
   <meta content="" name="description" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/symbols-nerds.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body class="inner_page item_page">
@@ -18,14 +20,18 @@
         <div class="header_logo">
           <a href="index.html"><img src="img/main_logo.png" alt="Логотип"></a>
         </div>
-        <nav class="main_navigation">
-          <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li class="active"><a href="/catalog.html">Магазин</a></li>
-            <li><a href="/contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
+
+          <button class="hamburger">&#9776;</button>
+          <button class="cross">&#735;</button>
+          <nav class="main_navigation menu">
+              <ul>
+                  <li><a href="#">Студия</a></li>
+                  <li><a href="#">Клиенты</a></li>
+                  <li class="active"><a href="/catalog.html">Магазин</a></li>
+                  <li><a href="/contacts.html">Контакты</a></li>
+              </ul>
+          </nav>
+
         <div class="main_basket">
           <a href="#"><i class="icon-basket"></i>Корзина</a>
         </div>
@@ -45,17 +51,17 @@
     <div class="inner_columns clearfix">
       <div class="inner_column_left item_preview">
         <div class="shop_item">
-          <img src="img/e-shop.jpg" alt="Shop">
+          <a data-fancybox="gallery" href="img/e-shop.jpg"><img src="img/e-shop.jpg" alt="Shop"></a>
         </div>
         <div class="item_preview_photos">
           <div class="shop_item">
-            <img src="img/e-shop.jpg" alt="Shop">
+            <a data-fancybox="gallery" href="img/e-shop_2.png"><img src="img/e-shop_2.png" alt="Shop"></a>
           </div>
           <div class="shop_item">
-            <img src="img/e-shop.jpg" alt="Shop">
+            <a data-fancybox="gallery" href="img/e-shop_3.png"><img src="img/e-shop_3.png" alt="Shop"></a>
           </div>
           <div class="shop_item">
-            <img src="img/e-shop.jpg" alt="Shop">
+            <a data-fancybox="gallery" href="img/e-shop_4.png"><img src="img/e-shop_4.png" alt="Shop"></a>
           </div>
         </div>
       </div>
@@ -100,9 +106,7 @@
 
 
     <div class="index_map">
-      <div class="main_map">
-        <img src="img/map.jpg" alt="">
-      </div>
+      <div class="main_map map" id="map"></div>
       <div class="index_map_contacts">
         <h1>NЁRDS DESIGN STUDIO</h1>
         <p>
@@ -113,6 +117,7 @@
         <a href="#" class="btn">Напишите нам</a>
       </div>
     </div>
+
   </main>
 
   <footer class="main_footer">
@@ -129,6 +134,10 @@
     </div>
   </footer>
 
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8rYJiGsnqgeewkAdV6zIVqlEf5fsjzKY"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>

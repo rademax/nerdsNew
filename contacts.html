@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Заголовок</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
   <meta content="" name="description" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" />
@@ -18,12 +19,14 @@
         <div class="header_logo">
           <a href="index.html"><img src="img/main_logo.png" alt="Логотип"></a>
         </div>
-        <nav class="main_navigation">
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+        <nav class="main_navigation menu">
           <ul>
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li class="active"><a href="#">Контакты</a></li>
+            <li><a href="/catalog.html">Магазин</a></li>
+            <li class="active"><a href="/contacts.html">Контакты</a></li>
           </ul>
         </nav>
         <div class="main_basket">
@@ -45,6 +48,14 @@
     <div class="inner_columns clearfix">
       <div class="inner_column_left">
 
+        <h2>Любим свою работу, гордимся результатами</h2>
+        <p>Мы создаем только уникальные и качественные продукты, отличающиеся удобством для пользователя, интерактивностью и быстротой работы. Наши сайты получают известность и признание миллионной интернет-аудитории.</p>
+        <p>Мы создаем только уникальные и качественные продукты, отличающиеся удобством для пользователя, интерактивностью и быстротой работы. Наши сайты получают известность и признание миллионной интернет-аудитории.</p>
+
+      </div>
+
+      <div class="inner_column_right">
+
         <form action="#" method="post" class="order_form">
           <input type="text" name="date" placeholder="Ваше имя">
           <input type="text" name="email" placeholder="E-mail">
@@ -54,18 +65,10 @@
         </form>
 
       </div>
-
-      <div class="inner_column_right">
-        <h2>Любим свою работу, гордимся результатами</h2>
-        <p>Мы создаем только уникальные и качественные продукты, отличающиеся удобством для пользователя, интерактивностью и быстротой работы. Наши сайты получают известность и признание миллионной интернет-аудитории.</p>
-        <p>Мы создаем только уникальные и качественные продукты, отличающиеся удобством для пользователя, интерактивностью и быстротой работы. Наши сайты получают известность и признание миллионной интернет-аудитории.</p>
-      </div>
     </div>
 
     <div class="index_map">
-      <div class="main_map">
-        <img src="img/map.jpg" alt="">
-      </div>
+      <div class="main_map map" id="map"></div>
       <div class="index_map_contacts">
         <h1>NЁRDS DESIGN STUDIO</h1>
         <p>
@@ -76,6 +79,7 @@
         <a href="#" class="btn">Напишите нам</a>
       </div>
     </div>
+
   </main>
 
   <footer class="main_footer">
@@ -92,6 +96,9 @@
     </div>
   </footer>
 
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8rYJiGsnqgeewkAdV6zIVqlEf5fsjzKY"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
