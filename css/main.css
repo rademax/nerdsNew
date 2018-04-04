@@ -673,7 +673,7 @@ body {
 
 .inner_item img {
   width: 100%;
-  height: auto;
+  height: 240px;
   max-height: 250px;
 }
 
@@ -752,7 +752,8 @@ body {
 
 .contact_page .inner_column_left {
   float: right;
-  width: 460px;
+  width: 480px;
+  margin-right: 10px;
 }
 
 .contact_page .inner_column_right {
@@ -994,7 +995,7 @@ body {
   }
 
   .index_partners .partners_item {
-    margin-right: 55px;
+    margin-right: 45px;
   }
 
   .index_map_contacts {
@@ -1355,6 +1356,31 @@ body {
 
   .main_navigation .active a, .main_basket .active a {
     color: #fb565a;
+  }
+
+  .slider_content_left {
+    text-align: center;
+  }
+
+  .slider_content_left .btn {
+    min-width: 200px;
+    max-width: 350px;
+  }
+
+  .index_content {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inner_item .item_hover {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .contact_page .inner_column_left {
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
